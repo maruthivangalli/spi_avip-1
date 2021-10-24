@@ -23,6 +23,10 @@ class slave_monitor_proxy extends uvm_monitor;
   //Signal : MOSI Data-Input
   bit [DATA_LENGTH-1:0]data_mosi;
 
+  // Variable: sa_cfg_h;
+  // Handle for slave agent configuration
+  slave_agent_config sa_cfg_h;
+
   //-------------------------------------------------------
   // Externally defined Tasks and Functions
   //-------------------------------------------------------
